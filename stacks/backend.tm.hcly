@@ -1,0 +1,9 @@
+cat <<EOF >stacks/backend.tm.hcl
+generate_hcl "backend.tf" {
+  content {
+    terraform {
+      backend "local" {}
+    }
+  }
+}
+EOF
